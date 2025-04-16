@@ -1,4 +1,4 @@
-# myapp
+# A food menu app
 
 A new Flutter project.
 
