@@ -59,7 +59,7 @@ flutter:
   assets:
     - assets/
     - assets/banners/
-    - asssets/categories/
-    - assets/diches/
+    - assets/categories/
+    - assets/dishes/
     - assets/others/
     - assets/restaurants/

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/data/categories_data.dart';
+import 'package:myapp/ui/home/widgets/category_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -22,6 +24,19 @@ class HomeScreen extends StatelessWidget {
             Text("Boas Vindas!"),
             TextFormField(),
             Text("Escolha por categoria"),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                spacing: 8.0,
+                children: List.generate(CategoriesData.listCategories.length, (
+                  index,
+                ) {
+                  return CategoryWidget(
+                    category: CategoriesData.listCategories[index],
+                  );
+                }),
+              ),
+            ),
             Image.asset('assets/banners/banner_promo.png'),
             Text("Bem avaliados"),
           ],
