@@ -1,5 +1,3 @@
-# Nhami Nhami
-
 Nhami Nhami is a food delivery app built with Flutter, designed to provide users with an innovative and seamless culinary experience.
 
 ## Purpose
